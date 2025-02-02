@@ -1,15 +1,9 @@
-import * as React from 'react';
-import TextField from '@mui/material/TextField';
-import Autocomplete from '@mui/material/Autocomplete';
-import top100Films from './Files';
+import React from 'react'
 
-export default function ComboBox() {
+const Home = () => {
   return (
-    <Autocomplete
-      disablePortal
-      options={top100Films}
-      sx={{ width: 300 }}
-      renderInput={(params) => <TextField {...params} label="Movie" />}
-    />
-  );
+    <div>Home</div>
+  )
 }
+
+export default Home
