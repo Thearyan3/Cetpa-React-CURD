@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Use flexbox for the body to allow footer to stay at the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:  #F7F9FB;
+}
+.Navbar {
+    display: flex;
+    align-items: center;
+    background-color: #4E73DF; /* Vibrant Blue */
+    color: white;
+    height: 5rem;
+    width: 100%;
+    position: fixed;
+    /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    /* Adjust padding as needed */
+    z-index: 1000;
+    /* Ensure navbar stays on top of other content */
+
+    & .anchor {
+            color: #FFFFFF; /* White */
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin: 0 1rem;
+        padding: 0.5rem 1rem;
+        border: 2px solid transparent;
+        /* Initially no visible border */
+        border-radius: 8px;
+        /* Curved edges */
+        transition: all 0.3s ease;
+        /* Optional: Add some subtle shadow to simulate a button-like effect */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        /* Centers text */
+
+        &:hover {
+            font-size: 1.6rem;
+            color: #FFD700; /* Gold */
+            background-color: #b3b3b3;
+            border-color: #b3b3b3;
+            border-radius: 20px;
+            /* Ensure the hover effect keeps the curved edges */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            /* Slightly stronger shadow */
+        }
+    }
+
+  
+}
